@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="jesus.mascotas.MainActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is your pet?"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="50px"/>
+        <ImageButton
+
+            android:id="@+id/ibDog"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_below="@+id/tvTitle"
+            android:background="@drawable/dog"
+            android:onClick="lanzarDog"
+            />
+        <ImageButton
+            android:id="@+id/ibCat"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_below="@+id/tvTitle"
+            android:layout_toRightOf="@+id/ibDog"
+            android:background="@drawable/cat"
+            android:onClick="lanzarCat"/>
+
+        <ImageButton
+            android:id="@+id/ibTurtle"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_below="@+id/tvEspace"
+            android:background="@drawable/turtle"
+            android:onClick="lanzarTurtle"
+            />
+        <ImageButton
+            android:id="@+id/ibFish"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_below="@+id/tvEspace"
+            android:layout_toRightOf="@+id/ibTurtle"
+            android:background="@drawable/fish"
+            android:onClick="lanzarFish"/>
+
+
+    </LinearLayout>
+

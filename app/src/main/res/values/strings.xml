@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mascotas</string>
+    <string name="doglike">Te gusta el perro!!</string>
+    <string name="catlike">Te gusta el gato!!</string>
+    <string name="turtlelike">Te gusta la tortuga!!</string>
+    <string name="fishlike">Te gusta el pez!!</string>
+</resources>

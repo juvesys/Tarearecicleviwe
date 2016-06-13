@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="jesus.mascotas.MainActivity"
+
+    >
+    <include android:id="@+id/action_bar"
+        layout="@layout/actionbar"
+        >
+</include>
+<ScrollView
+android:layout_below="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qué mascota tienes?"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="50px"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+
+        android:id="@+id/ibDog"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_below="@+id/tvTitle"
+        android:background="@drawable/dog"
+        android:onClick="lanzarDog"
+
+        />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bone"
+            android:id="@+id/fabDog"
+            />
+        <TextView
+            android:id="@+id/tvDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/ibCat"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_below="@+id/tvTitle"
+
+        android:background="@drawable/cat"
+        android:onClick="lanzarCat"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bone"
+        android:id="@+id/fabCat"
+        />
+    <TextView
+        android:id="@+id/tvCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/ibTurtle"
+        android:layout_width="300px"
+        android:layout_height="300px"
+
+        android:background="@drawable/turtle"
+        android:onClick="lanzarTurtle"
+        />
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bone"
+                android:id="@+id/fabTurtle"
+                />
+            <TextView
+                android:id="@+id/tvTurtle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/ibFish"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_below="@+id/tvEspace"
+        android:layout_toRightOf="@+id/ibTurtle"
+        android:background="@drawable/fish"
+        android:onClick="lanzarFish"/>
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bone"
+                android:id="@+id/fabFish"
+                />
+            <TextView
+                android:id="@+id/tvFish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
